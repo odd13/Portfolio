@@ -8,9 +8,24 @@
     float: none;
     color: #FFFFFF;
 }
-.center h1{
+.header h2{
     color: #FFFFFF;
+    padding: 0px;
+    margin: 0px;
 }
 .header li{
 	color: #FFFFFF;
+}
+.profile img {
+    width: 135px;
+    height: 165px;
+    padding: 0px;
+    margin: 0px;
+}
+.header a:link
+, a:visited
+, a:hover {
+  display: inline-block;
+  padding: 0px;
+  margin: 0px;
 }
