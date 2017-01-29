@@ -5,3 +5,4 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+skills = Skill.create([{name: 'Ruby', is_active: true}, {name: 'Rails', is_active: true}, {name: 'Arduino', is_active: true}])
