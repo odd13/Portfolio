@@ -19,3 +19,13 @@
   <% end %>
 </table>
 <%= link_to 'New article', new_article_path %>
+
+
+<div class="list-group">
+  <% @articles.each do |article| %>
+  <a href="<%= edit_article_path(article) %>" class="list-group-item">
+    <h4 class="list-group-item-heading"><%= article.title %></h4>
+    <p class="list-group-item-text">List Group Item Text</p>
+  </a>
+  <% end %>
+</div>
