@@ -1,0 +1,2 @@
+class AddThumurlToArticle < ApplicationRecord
+end

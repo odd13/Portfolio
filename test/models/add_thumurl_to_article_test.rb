@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class AddThumnailurlToArticalTest < ActiveSupport::TestCase
+class AddThumurlToArticleTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
