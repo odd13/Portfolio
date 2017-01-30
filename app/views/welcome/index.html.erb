@@ -1,8 +1,8 @@
-<div class="col-md-6 col-md-offset-3">
+<div class="col-md-12">
   <div class="row">
 
 <!-- This area runs through the skills that have been entered in the database. To figure out correct devider for better looks -->
-<h2>Skills: </h2>
+<h4>Skills: </h4>
 <% @skills.each_with_index do |t, index| %>
   <%= t.name %>
   <% if index == @skills.size - 1 %>
@@ -12,9 +12,10 @@
   <% end %>
 <% end %>
   </div>
+</br>
 </div>
 
- <div class="col-md-6 col-md-offset-3">
+ <div class="col-md-12">
    <div class="row">
     <p>
     Over several years I have been fortunate to have had many roles and positions:
