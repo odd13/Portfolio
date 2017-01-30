@@ -1,0 +1,2 @@
+class AddThumnailurlToArtical < ApplicationRecord
+end
