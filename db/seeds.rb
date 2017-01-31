@@ -1,7 +1,8 @@
 # using find_or_create_by will make this command idempotent which is useful
 # for the seeds as you will want to run them every time you want to add new
 # data
-Skill.find_or_create_by([
+
+seedArray = [
   { name: 'HTML', is_active: true },
   { name: 'Linux', is_active: true },
   { name: 'CSS', is_active: true },
@@ -23,4 +24,8 @@ Skill.find_or_create_by([
   { name: 'Google cloud', is_active: true },
   { name: 'VPS deployments', is_active: true },
   { name: 'Meteor', is_active: true }
-])
+]
+
+seedArray.each do |a|
+  Skill.find_or_create_by(a)
+end
