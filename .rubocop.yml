@@ -1,0 +1,104 @@
+require: rubocop-rspec
+
+AllCops:
+  Exclude:
+    - "db/schema.rb"
+    - "db/migrate/*"
+    - "bin/**/*"
+    - "vendor/**/*"
+    - "config.ru"
+    - "config/**/*"
+    - "Gemfile"
+    - "Rakefile"
+    - "spec/*_helper.rb"
+
+Rails:
+  Enabled: true
+
+# Disable for Rake tasks
+Lint/HandleExceptions:
+  Enabled: false
+
+Metrics/AbcSize:
+  Max: 25
+
+Metrics/ClassLength:
+  Max: 200
+
+Metrics/MethodLength:
+  Max: 12
+
+# Prevent "Use nested module/class definitions instead of compact style."
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Style/CollectionMethods:
+  Enabled: true
+
+Style/Documentation:
+  Enabled: false
+
+# Configuration parameters: SupportedStyles, IndentationWidth.
+# SupportedStyles: special_inside_parentheses, consistent, align_brackets
+Style/IndentArray:
+  EnforcedStyle: consistent
+
+# Configuration parameters: EnforcedStyle, SupportedStyles.
+# SupportedStyles: only_raise, only_fail, semantic
+Style/SignalException:
+  EnforcedStyle: semantic
+
+Style/StringLiterals:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/TrailingCommaInArguments:
+  Enabled: false
+
+Style/TrailingCommaInLiteral:
+  Enabled: false
+
+Style/NumericLiterals:
+  Enabled: false
+
+Style/SignalException:
+  Enabled: false
+
+Style/Lambda:
+  Enabled: false
+
+Style/SpaceAroundOperators:
+  Enabled: false
+
+Style/EmptyLinesAroundClassBody:
+  Enabled: false
+
+Style/LambdaCall:
+  Enabled: false
+
+Style/AsciiComments:
+  Enabled: false
+
+Rails/Output:
+  Enabled: false
+
+RSpec/MultipleExpectations:
+  Enabled: false
+
+# seems to be broken
+RSpec/MessageExpectation:
+  Enabled: false
+
+# seems to be broken
+RSpec/SubjectStub:
+  Enabled: false
+
+RSpec/LetSetup:
+  Enabled: false
+
+RSpec/MessageSpies:
+  Enabled: false
+
+
