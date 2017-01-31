@@ -30,11 +30,12 @@ class ArticlesController < BaseController
     @article = Article.new(article_params)
 
     if @article.save
-        redirect_to @article
-      else
-        render 'new'
-      end
+      redirect_to @article
+    else
+      render 'new'
+    end
   end
+
   def destroy
     @article = Article.find(params[:id])
     @article.destroy
@@ -43,6 +44,7 @@ class ArticlesController < BaseController
   end
 
   private
+
   def article_params
     params.require(:article).permit(:title, :text, :thumurl)
   end
