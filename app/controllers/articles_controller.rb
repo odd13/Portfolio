@@ -1,5 +1,4 @@
-class ArticlesController < ApplicationController
-  http_basic_authenticate_with name: "odd13", password: "Th!sisS3cret", except: [:index, :show]
+class ArticlesController < BaseController
 
   def index
     @articles = Article.all
@@ -16,6 +15,7 @@ class ArticlesController < ApplicationController
   def edit
     @article = Article.find(params[:id])
   end
+
   def update
     @article = Article.find(params[:id])
 
