@@ -3,27 +3,27 @@
 # data
 
 seedArray = [
-  { name: 'HTML', is_active: true },
-  { name: 'Linux', is_active: true },
-  { name: 'CSS', is_active: true },
-  { name: 'Ruby on rails', is_active: true },
-  { name: 'Arduino', is_active: true },
-  { name: 'Python', is_active: true },
-  { name: 'C', is_active: true },
-  { name: 'C++', is_active: true },
-  { name: 'Git', is_active: true },
-  { name: 'Heroku', is_active: true },
-  { name: 'Bash scripts', is_active: true },
-  { name: 'MySQL', is_active: true },
-  { name: 'MySQL', is_active: true },
-  { name: 'Postgresql', is_active: true },
-  { name: 'Reports builder', is_active: true },
-  { name: 'VB', is_active: true },
-  { name: 'JavaScript', is_active: true },
-  { name: 'Java', is_active: true },
-  { name: 'Google cloud', is_active: true },
-  { name: 'VPS deployments', is_active: true },
-  { name: 'Meteor', is_active: true }
+  { name: 'HTML' },
+  { name: 'Linux' },
+  { name: 'CSS' },
+  { name: 'Ruby on rails' },
+  { name: 'Arduino' },
+  { name: 'Python' },
+  { name: 'C' },
+  { name: 'C++' },
+  { name: 'Git' },
+  { name: 'Heroku' },
+  { name: 'Bash scripts' },
+  { name: 'MySQL' },
+  { name: 'MySQL' },
+  { name: 'Postgresql' },
+  { name: 'Reports builder' },
+  { name: 'VB' },
+  { name: 'JavaScript' },
+  { name: 'Java' },
+  { name: 'Google cloud' },
+  { name: 'VPS deployments' },
+  { name: 'Meteor' }
 ]
 
 seedArray.each do |a|
