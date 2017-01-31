@@ -1,5 +1,4 @@
-class ArticlesController < ApplicationController
-  http_basic_authenticate_with name: "odd13", password: "Th!sisS3cret", except: [:index, :show]
+class ArticlesController < BaseController
 
   def index
     @articles = Article.all
@@ -16,6 +15,7 @@ class ArticlesController < ApplicationController
   def edit
     @article = Article.find(params[:id])
   end
+
   def update
     @article = Article.find(params[:id])
 
@@ -30,11 +30,12 @@ class ArticlesController < ApplicationController
     @article = Article.new(article_params)
 
     if @article.save
-        redirect_to @article
-      else
-        render 'new'
-      end
+      redirect_to @article
+    else
+      render 'new'
+    end
   end
+
   def destroy
     @article = Article.find(params[:id])
     @article.destroy
@@ -43,6 +44,7 @@ class ArticlesController < ApplicationController
   end
 
   private
+
   def article_params
     params.require(:article).permit(:title, :text, :thumurl)
   end
