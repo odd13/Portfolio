@@ -9,9 +9,3 @@
   <%= comment.body %>
 </i>
 </p>
-
-<p>
-  <%= link_to 'Remove Comment', [comment.article, comment],
-               method: :delete,
-               data: { confirm: 'Are you sure?' } %>
-</p>
