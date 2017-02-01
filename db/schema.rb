@@ -18,9 +18,9 @@ ActiveRecord::Schema.define(version: 20170201100733) do
   create_table "articles", force: :cascade do |t|
     t.string   "title"
     t.text     "text"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.text     "thumurl"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+    t.text     "thumbnail_url"
   end
 
   create_table "comments", force: :cascade do |t|

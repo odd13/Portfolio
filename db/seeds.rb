@@ -2,7 +2,7 @@
 # for the seeds as you will want to run them every time you want to add new
 # data
 
-seedArraySkill = [
+skills = [
   { name: 'HTML', rank: 1 },
   { name: 'Linux', rank: 1 },
   { name: 'CSS', rank: 1},
@@ -25,17 +25,17 @@ seedArraySkill = [
   { name: 'Meteor', rank: 4 }
 ]
 
-seedArraySkill.each do |a|
+skills.each do |a|
   Skill.find_or_create_by(a)
 end
 
-seedArrayDisciplines = [
+disiciplines = [
   { name: 'Management'},
   { name: 'Managed Services'},
   { name: 'Account Management'},
   { name: 'Company Processes'}
 ]
 
-seedArrayDisciplines.each do |a|
+disiciplines.each do |a|
   Discipline.find_or_create_by(a)
 end
