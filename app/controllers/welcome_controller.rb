@@ -1,6 +1,5 @@
-class WelcomeController < ApplicationController
+class WelcomeController < BaseController
   def index
-    @skills = Skill.order('rank').all
-    @disciplines = Discipline.all
+    bind_skills_and_disciplines
   end
 end

@@ -1,21 +1,14 @@
-<p>
-  <h1>
-    <%= @article.title %>
-  </h1>
-</p>
+<h1><%= @article.title %></h1>
+  <p>
+    <%= @article.text.html_safe %>
+  </p>
 
-<p>
-  <%= @article.text.html_safe %>
-</p>
+</br></br>
 
-</br>
-</br>
-<hr>
-<h4>Comments</h4>
-<%= render @article.comments %>
-
-<h4>Add a comment:</h4>
-<%= render 'comments/form' %>
-
-
-<%= link_to 'Back', articles_path %>
+  <hr>
+  <h4>Comments</h4>
+  <%= render @article.comments %>
+  </br>
+  <h4>Add a comment:</h4>
+  <%= render 'comments/form' %>
+  <%= link_to 'Back', articles_path %>

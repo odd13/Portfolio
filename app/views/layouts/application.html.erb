@@ -8,31 +8,27 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
-
   <body>
+    <!--HEADER-->
     <%= render 'layouts/header' %>
 
     <div class="container-fluid">
-
       <div class="row">
+        <!--Left Column-->
         <div class="col-md-3">
-          <!-- Removed as they are listed at the top of the page
-            <%= render 'layouts/skillstable' %>
-          -->
           <%= render 'layouts/disciplinestable' %>
         </div>
-
+        <!--Center Column-->
         <div class="col-md-6">
           <%= yield %>
         </div>
-
+        <!--Right Column-->
         <div class="col-md-3">
           <%= render 'layouts/disciplinestable' %>
         </div>
       </div>
-
     </div>
+    <!--FOOTER-->
     <%= render 'layouts/footer' %>
-
    </body>
 </html>
