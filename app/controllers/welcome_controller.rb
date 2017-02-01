@@ -1,5 +1,5 @@
-class WelcomeController < ApplicationController
+class WelcomeController < BaseController
   def index
-    @skills = Skill.all
+    bind_skills_and_disciplines
   end
 end

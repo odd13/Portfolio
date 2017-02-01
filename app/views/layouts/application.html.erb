@@ -7,20 +7,28 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
   </head>
-
   <body>
+    <!--HEADER-->
     <%= render 'layouts/header' %>
 
-  <div class="container">
-    <div class="col-md-6 col-md-offset-3">
+    <div class="container-fluid">
       <div class="row">
-    <%= yield %>
+        <!--Left Column-->
+        <div class="col-md-3">
+          <%= render 'layouts/disciplinestable' %>
+        </div>
+        <!--Center Column-->
+        <div class="col-md-6">
+          <%= yield %>
+        </div>
+        <!--Right Column-->
+        <div class="col-md-3">
+          <%= render 'layouts/disciplinestable' %>
+        </div>
       </div>
     </div>
-  </div>
-
- <%= render 'layouts/footer' %>
- </body>
+    <!--FOOTER-->
+    <%= render 'layouts/footer' %>
+   </body>
 </html>

@@ -7,6 +7,4 @@ Rails.application.routes.draw do
   resources :articles, only: [:index, :get, :show] do
     resources :comments, only: [:index, :get, :create]
   end
-
-  get 'skills/index'
 end

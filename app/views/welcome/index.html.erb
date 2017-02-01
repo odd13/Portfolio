@@ -1,22 +1,14 @@
-<div class="col-md-12">
-  <div class="row">
-
 <!-- This area runs through the skills that have been entered in the database. To figure out correct divider for better looks -->
-<h4>Skills: </h4>
+<h3>Skills: </h3>
 <% @skills.each_with_index do |t, index| %>
-  <%= t.name %>
+  <font style=" color: <%= t.rgb_for_current_rank(t.rank - 1) %>;"><%= t.name %></font>
   <% if index == @skills.size - 1 %>
     .
     <% else %>
     -
   <% end %>
 <% end %>
-  </div>
-</br>
-</div>
-
- <div class="col-md-12">
-   <div class="row">
+<h3>Introduction: </h3>
     <p>
     Over several years I have been fortunate to have had many roles and positions:
     </p>
@@ -64,5 +56,3 @@
     <p>
     I will be further pursuing my studies within software development as I have a strong drive for creativity.
     </p>
-</div>
-</div>

@@ -1,0 +1,10 @@
+<div class="table-responsive table-inverse">
+  <table class="table table-inverse">
+    <th class="text-uppercase">Skills</th>
+    <% @skills.each_with_index do |t, index| %>
+      <tr>
+        <td><%= t.name %></td>
+      </tr>
+    <% end %>
+  </table>
+</div>

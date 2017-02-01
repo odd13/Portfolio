@@ -4,4 +4,9 @@ class BaseController < ApplicationController
     password: "Th!sisS3cret",
     except: [:index, :show]
   )
+
+  def bind_skills_and_disciplines
+    @skills = Skill.order('rank').all
+    @disciplines = Discipline.all
+  end
 end
