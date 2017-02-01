@@ -1,0 +1,9 @@
+
+  <table class="table table-bordered">
+    <th class="text-uppercase">Disciplines</th>
+    <% @disciplines.each_with_index do |t, index| %>
+      <tr>
+        <td><%= t.name %></td>
+      </tr>
+    <% end %>
+  </table>
