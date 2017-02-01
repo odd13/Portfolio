@@ -1,9 +1,13 @@
 
-  <table class="table table-bordered">
-    <th class="text-uppercase">Disciplines</th>
-    <% @disciplines.each_with_index do |t, index| %>
+<table class="table table-bordered table-responsive">
+  <thead class="text-uppercase" >
       <tr>
-        <td><%= t.name %></td>
+          <th style="padding: 0px; margin: 0px;background-color: #f9f9f9; border-bottom-style: solid; border-bottom-color: #000;">Disciplines</th>
       </tr>
-    <% end %>
-  </table>
+  </thead>
+  <% @disciplines.each_with_index do |t, index| %>
+    <tr style="background-color: #f9f9f9;">
+      <td style="padding: 0px; margin: 0px;"><%= t.name %></td>
+    </tr>
+  <% end %>
+</table>
