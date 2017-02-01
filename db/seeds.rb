@@ -3,27 +3,26 @@
 # data
 
 seedArray = [
-  { name: 'HTML' },
-  { name: 'Linux' },
-  { name: 'CSS' },
-  { name: 'Ruby on rails' },
-  { name: 'Arduino' },
-  { name: 'Python' },
-  { name: 'C' },
-  { name: 'C++' },
-  { name: 'Git' },
-  { name: 'Heroku' },
-  { name: 'Bash scripts' },
-  { name: 'MySQL' },
-  { name: 'MySQL' },
-  { name: 'Postgresql' },
-  { name: 'Reports builder' },
-  { name: 'VB' },
-  { name: 'JavaScript' },
-  { name: 'Java' },
-  { name: 'Google cloud' },
-  { name: 'VPS deployments' },
-  { name: 'Meteor' }
+  { name: 'HTML', rank: 1 },
+  { name: 'Linux', rank: 1 },
+  { name: 'CSS', rank: 1},
+  { name: 'Ruby on rails', rank: 3 },
+  { name: 'Arduino', rank: 3 },
+  { name: 'Python', rank: 2 },
+  { name: 'C', rank: 3 },
+  { name: 'C++', rank: 3 },
+  { name: 'Git', rank: 3 },
+  { name: 'Heroku', rank: 3 },
+  { name: 'Bash scripts', rank: 3 },
+  { name: 'MySQL', rank: 2 },
+  { name: 'Postgresql', rank: 4 },
+  { name: 'Reports builder 3.0', rank: 2 },
+  { name: 'VB', rank: 4 },
+  { name: 'JavaScript', rank: 3 },
+  { name: 'Java', rank: 3 },
+  { name: 'Google cloud', rank: 4 },
+  { name: 'VPS deployments', rank: 2 },
+  { name: 'Meteor', rank: 4 }
 ]
 
 seedArray.each do |a|

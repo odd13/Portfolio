@@ -1,5 +1,5 @@
 class WelcomeController < ApplicationController
   def index
-    @skills = Skill.all
+    @skills = Skill.order('rank').all
   end
 end

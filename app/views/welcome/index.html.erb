@@ -4,7 +4,7 @@
 <!-- This area runs through the skills that have been entered in the database. To figure out correct divider for better looks -->
 <h4>Skills: </h4>
 <% @skills.each_with_index do |t, index| %>
-  <%= t.name %>
+  <font style=" color: <%= getRank(t.rank - 1) %>;"><%= t.name %></font>
   <% if index == @skills.size - 1 %>
     .
     <% else %>
