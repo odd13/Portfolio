@@ -41,7 +41,7 @@ ActiveRecord::Schema.define(version: 20170201100733) do
   create_table "skills", force: :cascade do |t|
     t.string   "name",                      null: false
     t.boolean  "is_active",  default: true, null: false
-    t.integer  "rank",       default: 1,    null: false
+    t.integer  "skill_rank", default: 1,    null: false
     t.datetime "created_at",                null: false
     t.datetime "updated_at",                null: false
   end

@@ -1,7 +1,7 @@
 <!-- This area runs through the skills that have been entered in the database. To figure out correct divider for better looks -->
 <h3>Skills: </h3>
 <% @skills.each_with_index do |t, index| %>
-  <font style=" color: <%= t.rgb_for_current_rank(t.rank - 1) %>;"><%= t.name %></font>
+  <font style=" color: <%= t.rgb_for_current_rank(t.skill_rank - 1) %>;"><%= t.name %></font>
   <% if index == @skills.size - 1 %>
     .
     <% else %>

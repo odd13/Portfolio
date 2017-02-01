@@ -6,7 +6,7 @@ class BaseController < ApplicationController
   )
 
   def bind_skills_and_disciplines
-    @skills = Skill.order('rank').all
+    @skills = Skill.order('skill_rank').all
     @disciplines = Discipline.all
   end
 end

@@ -3,26 +3,26 @@
 # data
 
 skills = [
-  { name: 'HTML', rank: 1 },
-  { name: 'Linux', rank: 1 },
-  { name: 'CSS', rank: 1},
-  { name: 'Ruby on rails', rank: 3 },
-  { name: 'Arduino', rank: 3 },
-  { name: 'Python', rank: 2 },
-  { name: 'C', rank: 3 },
-  { name: 'C++', rank: 3 },
-  { name: 'Git', rank: 3 },
-  { name: 'Heroku', rank: 3 },
-  { name: 'Bash scripts', rank: 3 },
-  { name: 'MySQL', rank: 2 },
-  { name: 'Postgresql', rank: 4 },
-  { name: 'Reports builder 3.0', rank: 2 },
-  { name: 'VB', rank: 4 },
-  { name: 'JavaScript', rank: 3 },
-  { name: 'Java', rank: 3 },
-  { name: 'Google cloud', rank: 4 },
-  { name: 'VPS deployments', rank: 2 },
-  { name: 'Meteor', rank: 4 }
+  { name: 'HTML', skill_rank: 1 },
+  { name: 'Linux', skill_rank: 1 },
+  { name: 'CSS', skill_rank: 1},
+  { name: 'Ruby on rails', skill_rank: 3 },
+  { name: 'Arduino', skill_rank: 3 },
+  { name: 'Python', skill_rank: 2 },
+  { name: 'C', skill_rank: 3 },
+  { name: 'C++', skill_rank: 3 },
+  { name: 'Git', skill_rank: 3 },
+  { name: 'Heroku', skill_rank: 3 },
+  { name: 'Bash scripts', skill_rank: 3 },
+  { name: 'MySQL', skill_rank: 2 },
+  { name: 'Postgresql', skill_rank: 4 },
+  { name: 'Reports builder 3.0', skill_rank: 2 },
+  { name: 'VB', skill_rank: 4 },
+  { name: 'JavaScript', skill_rank: 3 },
+  { name: 'Java', skill_rank: 3 },
+  { name: 'Google cloud', skill_rank: 4 },
+  { name: 'VPS deployments', skill_rank: 2 },
+  { name: 'Meteor', skill_rank: 4 }
 ]
 
 skills.each do |a|
