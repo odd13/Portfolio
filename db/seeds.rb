@@ -39,3 +39,26 @@ disiciplines = [
 disiciplines.each do |a|
   Discipline.find_or_create_by(a)
 end
+
+educations = [
+  { name: 'Java'},
+  { name: 'Personal Training'},
+  { name: 'ITIL'},
+  { name: 'CERT IV'},
+  { name: 'Frontline Management'}
+]
+
+educations.each do |a|
+  Education.find_or_create_by(a)
+end
+
+industries = [
+  { name: 'MSP'},
+  { name: 'Health and Fitness'},
+  { name: 'Information Technology'},
+  { name: 'Retail'}
+]
+
+industries.each do |a|
+  Industry.find_or_create_by(a)
+end

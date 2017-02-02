@@ -1,0 +1,2 @@
+class EducationsController < BaseController
+end
