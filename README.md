@@ -2,9 +2,6 @@
 
 In order to get the portfolio up and running. Please follow the below steps:
 
-## Remove the file dbrefresh.sh
-This file is a script that drops the database, recreates and places dummy data in the database.
-
 Things you may want to cover:
 
 * Ruby version
