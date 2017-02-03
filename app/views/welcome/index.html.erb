@@ -1,13 +1,48 @@
 <!-- This area runs through the skills that have been entered in the database. To figure out correct divider for better looks -->
 <h3>Skills: </h3>
+<p>
 <% @skills.each_with_index do |t, index| %>
   <font style=" color: <%= t.rgb_for_current_rank(t.skill_rank - 1) %>;"><%= t.name %></font>
   <% if index == @skills.size - 1 %>
-    .
+    &nbsp;
     <% else %>
     -
   <% end %>
 <% end %>
+</p>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3">
+    </div>
+    <div class="col-md-6 offset-md-3">
+      <div align="center">
+        <table width="100%" class="table-bordered table-responsive">
+          <thead>
+              <th colspan="5" >Proficient
+                <div style="float: right;">Learning</div>
+              </th>
+          </thead>
+            <tr>
+              <!-- TODO This needs to be changed to a global variable-->
+              <% x = [
+                    "rgb(191,240,115)",
+                    "rgb(13,201,247)",
+                    "rgb(127,127,127)",
+                    "rgb(240,91,71)",
+                    "rgb(237,28,36)"
+                  ] %>
+              <% x.each_with_index do |r, index| %>
+                <td align="center" style="opacity: 0.4; background-color: <%= r %>;">&nbsp;</td>
+                <% end %>
+            </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 <h3>Introduction: </h3>
     <p>
     Over several years I have been fortunate to have had many roles and positions:
