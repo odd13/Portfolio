@@ -2,12 +2,13 @@
 <% @articles.each do |article| %>
 <div id="products" class="row list-group">
   <div class="item  col-xs-12 col-lg-12">
-    <div class="thumbnail">
-      <img class="group rounded list-group-image" src="<%= article.thumbnail_url %>" alt="" width="150px" />
+    <div class="thumbnail" >
+      <a href="<%= article_path(article) %>">
+      <img class="img-rounded img-fluid img-thumbnail" src="<%= article.thumbnail_url %>" alt="" height="200px"/>
       <div class="caption">
-        <a href="<%= article_path(article) %>">
-          <h4 class="group inner list-group-item-heading">
-              <%= article.title %></h4>
+
+          <h3 align="center" class="group inner list-group-item-heading">
+              <%= article.title %></h3>
           <p class="group inner list-group-item-text">
               </p>
           <div class="row">
