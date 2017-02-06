@@ -1,0 +1,2 @@
+class IndustriesController < BaseController
+end

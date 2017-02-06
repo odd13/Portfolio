@@ -100,5 +100,3 @@ RSpec/LetSetup:
 
 RSpec/MessageSpies:
   Enabled: false
-
-

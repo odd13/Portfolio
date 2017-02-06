@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Portfolio</title>
+    <title>Chad Olliffes Portfolio</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -17,6 +17,11 @@
         <!--Left Column-->
         <div class="col-md-3">
           <%= render 'layouts/disciplinestable' %>
+        </br>
+          <%= render 'layouts/educationstable' %>
+        </br>
+          <%= render 'layouts/industriestable' %>
+
         </div>
         <!--Center Column-->
         <div class="col-md-6">
@@ -24,7 +29,9 @@
         </div>
         <!--Right Column-->
         <div class="col-md-3">
+          <!--
           <%= render 'layouts/disciplinestable' %>
+        -->
         </div>
       </div>
     </div>

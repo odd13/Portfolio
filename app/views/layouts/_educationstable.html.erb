@@ -1,0 +1,13 @@
+
+<table class="table table-bordered table-responsive">
+  <thead class="text-uppercase" >
+      <tr>
+          <th style="padding: 0px; margin: 0px;background-color: #f9f9f9; border-bottom-style: solid; border-bottom-color: #000;">Industries</th>
+      </tr>
+  </thead>
+  <% @industries.each_with_index do |t, index| %>
+    <tr style="background-color: #f9f9f9;">
+      <td style="padding: 0px; margin: 0px;"><%= t.name %></td>
+    </tr>
+  <% end %>
+</table>
