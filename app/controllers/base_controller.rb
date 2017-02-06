@@ -5,5 +5,7 @@ class BaseController < ApplicationController
     @disciplines = Discipline.all
     @educations = Education.all
     @industries = Industry.all
+    @skill_levels = Skill.order('skill_rank').group(:skill_rank).count
   end
+
 end

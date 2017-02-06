@@ -1,4 +1,6 @@
+
 <!-- This area runs through the skills that have been entered in the database. To figure out correct divider for better looks -->
+<!--
 <h3>Skills: </h3>
 <p>
 <% @skills.each_with_index do |t, index| %>
@@ -11,6 +13,14 @@
 <% end %>
 </p>
 
+<p>
+<h3>Skills: </h3>
+<p>
+
+
+
+</p>
+
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-3">
@@ -19,12 +29,14 @@
       <div align="center">
         <table width="100%" class="table-bordered table-responsive">
           <thead>
-              <th colspan="5" >Proficient
-                <div style="float: right;">Learning</div>
+              <th colspan="5">
+                <div style="float: left;">Proficient</div>
+
+                <div style="float: right;" >Learning</div>
               </th>
           </thead>
             <tr>
-              <!-- TODO This needs to be changed to a global variable-->
+              <!-- TODO This needs to be changed to a global variable
               <% x = [
                     "rgb(0, 153, 51)",
                     "rgb(13,201,247)",
@@ -41,7 +53,32 @@
     </div>
   </div>
 </div>
+-->
+<h3>Skills: </h3>
+<table width="100%" class="table-bordered table-responsive">
+    <tr>
+        <td width="30%">
 
+          1 = Able to create 'Hello World'</br>
+          5 = Able to build a full application</br>
+          and capible of teaching others
+        </td>
+        <td>
+          <% @skill_levels.each_with_index do |t, index| %>
+            <% @skills_by_rank = Skill.where('skill_rank = ?', t[0]) %>
+              <%= t[0]%> -
+              <% @skills_by_rank.each_with_index do |sr, index| %>
+                <% if index == @skills_by_rank.size - 1 %>
+                    <%= sr.name %> &nbsp;
+                <% else %>
+                  <%= sr.name %> -
+                <% end %>
+              <% end %>
+              </br>
+          <% end %>
+        </td>
+    </tr>
+</table>
 
 <h3>Introduction: </h3>
     <p>
@@ -91,3 +128,6 @@
     <p>
     I will be further pursuing my studies within software development as I have a strong drive for creativity.
     </p>
+<!--
+<%= render 'testspoton'%>
+-->
