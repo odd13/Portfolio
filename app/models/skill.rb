@@ -1,5 +1,6 @@
 class Skill < ApplicationRecord
-  #rgb_for_current_rank returns a colour in relation to the skill rank that has ben set
+  # rgb_for_current_rank returns a colour in relation to the skill rank that
+  # has ben set
   def rgb_for_current_rank(rank)
     values = [
       "rgb(0, 153, 51)",
