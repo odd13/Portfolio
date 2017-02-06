@@ -3,26 +3,26 @@
 # data
 
 skills = [
-  { name: 'HTML', skill_rank: 1 },
-  { name: 'Linux', skill_rank: 1 },
-  { name: 'CSS', skill_rank: 1 },
+  { name: 'HTML', skill_rank: 5 },
+  { name: 'Linux', skill_rank: 5 },
+  { name: 'CSS', skill_rank: 5 },
   { name: 'Ruby on rails', skill_rank: 3 },
   { name: 'Arduino', skill_rank: 3 },
-  { name: 'Python', skill_rank: 2 },
+  { name: 'Python', skill_rank: 3 },
   { name: 'C', skill_rank: 3 },
   { name: 'C++', skill_rank: 3 },
   { name: 'Git', skill_rank: 3 },
   { name: 'Heroku', skill_rank: 3 },
   { name: 'Bash scripts', skill_rank: 3 },
-  { name: 'MySQL', skill_rank: 2 },
-  { name: 'Postgresql', skill_rank: 4 },
-  { name: 'Reports builder 3.0', skill_rank: 2 },
-  { name: 'VB', skill_rank: 4 },
+  { name: 'MySQL', skill_rank: 4 },
+  { name: 'Postgresql', skill_rank: 3 },
+  { name: 'Reports builder 3.0', skill_rank: 4 },
+  { name: 'VB', skill_rank: 2 },
   { name: 'JavaScript', skill_rank: 3 },
   { name: 'Java', skill_rank: 3 },
   { name: 'Google cloud', skill_rank: 4 },
-  { name: 'VPS deployments', skill_rank: 2 },
-  { name: 'Meteor', skill_rank: 4 }
+  { name: 'VPS deployments', skill_rank: 4 },
+  { name: 'Meteor', skill_rank: 1 }
 ]
 
 skills.each do |a|
