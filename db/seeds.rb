@@ -278,7 +278,15 @@ articles =
     <p>My building collection (the last image is my smallest 33cm wide):</p>' },
     { title: 'RSS Feed Notification',
       thumbnail_url: 'assets/blog/ledraspi2.png',
-      text: 'TODO' }
+      text: 'TODO' },
+    { title: 'Spoton Webapp',
+      thumbnail_url: '',
+      text: '<p>
+            Very simple customer relation management for a property maintenance
+            company. To bridge the gap between Real Estate agents, Property
+            Maintenance and the Customer. Currently able to book jobs and log
+            time in the field. Eventually this will be data analytics, quoting
+            and invoicing directly.</p>' }
   ]
 
 articles.each do |a|
