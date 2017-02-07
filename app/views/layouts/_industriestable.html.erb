@@ -1,13 +1,16 @@
-
+<div class="row">
+<div class="col-md-6 col-md-offset-3">
 <table class="table table-bordered table-responsive">
   <thead class="text-uppercase" >
       <tr>
-          <th style="padding: 0px; margin: 0px;background-color: #f9f9f9; border-bottom-style: solid; border-bottom-color: #000;">Education</th>
+          <th class="text-center" style="padding: 0px; margin: 0px;background-color: #f9f9f9; border-bottom-style: none; border-bottom-color: #000;"><u>Education</u></th>
       </tr>
   </thead>
   <% @educations.each_with_index do |t, index| %>
-    <tr style="background-color: #f9f9f9;">
-      <td style="padding: 0px; margin: 0px;"><%= t.name %></td>
+    <tr class="text-center" style="background-color: #f9f9f9;">
+      <td style="padding: 0px; margin: 0px; border: none;"><%= t.name %></td>
     </tr>
   <% end %>
 </table>
+</div>
+</div>

@@ -40,6 +40,18 @@ disiciplines.each do |a|
   Discipline.find_or_create_by(a)
 end
 
+interests = [
+  { name: 'Gaming' },
+  { name: 'Coding' },
+  { name: '4wding' },
+  { name: 'Camping' },
+  { name: 'Fitness' }
+]
+
+interests.each do |a|
+  Interest.find_or_create_by(a)
+end
+
 educations = [
   { name: 'Java' },
   { name: 'Personal Training' },
