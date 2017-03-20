@@ -3,10 +3,10 @@
 # data
 
 skills = [
-  { name: 'MSSQL', skill_rank: 3 },
-  { name: 'SSAS', skill_rank: 3 },
-  { name: 'SSIS', skill_rank: 3 },
-  { name: 'SSRS', skill_rank: 3 },
+  { name: 'MSSQL', skill_rank: 2 },
+  { name: 'SSAS', skill_rank: 2 },
+  { name: 'SSIS', skill_rank: 2 },
+  { name: 'SSRS', skill_rank: 2 },
 
   { name: 'HTML', skill_rank: 5 },
   { name: 'Linux', skill_rank: 5 },
