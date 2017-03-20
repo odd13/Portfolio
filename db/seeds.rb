@@ -3,6 +3,11 @@
 # data
 
 skills = [
+  { name: 'MSSQL', skill_rank: 3 },
+  { name: 'SSAS', skill_rank: 3 },
+  { name: 'SSIS', skill_rank: 3 },
+  { name: 'SSRS', skill_rank: 3 },
+
   { name: 'HTML', skill_rank: 5 },
   { name: 'Linux', skill_rank: 5 },
   { name: 'CSS', skill_rank: 5 },
@@ -53,11 +58,13 @@ interests.each do |a|
 end
 
 educations = [
-  { name: 'Java' },
-  { name: 'Personal Training' },
+  { name: 'CRM Config' },
+  { name: 'SSAS' },
   { name: 'ITIL' },
   { name: 'CERT IV' },
-  { name: 'Frontline Management' }
+  { name: 'Java' },
+  { name: 'Frontline Management' },
+  { name: 'Personal Training' },
 ]
 
 educations.each do |a|
