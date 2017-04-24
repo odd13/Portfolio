@@ -12,6 +12,7 @@ Rails.application.routes.draw do
     resources :industries, only: [:new, :create, :edit, :update, :destroy, :index, :show]
     resources :disciplines, only: [:new, :create, :edit, :update, :destroy, :index, :show]
     resources :interests, only: [:new, :create, :edit, :update, :destroy, :index, :show]
+    resources :skills, only: [:new, :create, :edit, :update, :destroy, :index, :show]
     resources :articles, only: [:new, :create, :edit, :update, :destroy]
   end
 

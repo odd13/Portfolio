@@ -1,0 +1,11 @@
+<%= form_for(@skill) do |i| %>
+        <p>
+         <%= i.label :name %><br>
+         <%= i.text_field :name %>
+       </p>
+       <p>
+         <%= i.label :skill_rank %><br>
+         <%= i.text_field :skill_rank %>
+       </p>
+    <%= i.submit %>
+<% end %>
