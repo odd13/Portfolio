@@ -9,14 +9,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-
-    <% if notice %>
-      <p class="alert alert-success"><%= notice %></p>
-    <% end %>
-    <% if alert %>
-      <p class="alert alert-danger"><%= alert %></p>
-    <% end %>
-    
     <!--HEADER-->
     <%= render 'layouts/header' %>
 
@@ -35,6 +27,13 @@
         </div>
         <!--Center Column-->
         <div class="col-md-6">
+          <% if notice %>
+            <p class="alert alert-success"><%= notice %></p>
+          <% end %>
+          <% if alert %>
+            <p class="alert alert-danger"><%= alert %></p>
+          <% end %>
+          
           <%= yield %>
         </div>
         <!--Right Column-->

@@ -2,7 +2,11 @@
   <p>
     <%= @article.text.html_safe %>
   </p>
-
+  <% if user_signed_in? %>
+    <%= link_to 'Edit', edit_article_path(@article) %> |
+    <%= link_to 'Delete', article_path(@article), method: :delete, data: { confirm: "You sure?" } %>
+  <% end %>
+    <%= link_to 'Back', articles_path %>
 </br></br>
 
   <hr>

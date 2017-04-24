@@ -1,4 +1,12 @@
 <h1>Projects</h1>
+<% if user_signed_in? %>
+  <div id="wrapper" style="text-align: center">
+    <a href="<%= request.fullpath %>/new">
+    <i class="fa fa-plus fa-3x" aria-hidden="true"></i>
+  </a>
+  </div>
+<% end %>
+
 <% @articles.each do |article| %>
 <div id="products" class="row list-group">
   <div class="item  col-xs-12 col-lg-12">

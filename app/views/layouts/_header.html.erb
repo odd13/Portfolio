@@ -8,7 +8,14 @@
   <a href="mailto:chadolliffe@gmail.com" class="header"><i class="fa fa-envelope fa-3x fa-fw" aria-hidden="true"></i></a>
   <a href="<%= articles_path %>" class="header" data-toggle="tooltip" title="Projects"><i class="fa fa-book fa-3x fa-fw" aria-hidden="true"></i></a>
   <a href="https://au.linkedin.com/in/chad-olliffe-89941421" class="header" data-toggle="tooltip" title="Linkedin"><i class="fa fa-linkedin fa-3x fa-fw" aria-hidden="true"></i></a>
-	<!-----Spoton :: Notification :: Todo :: Portfolio-->
+  <% if user_signed_in? %>
+    </br>
+    <a href="<%= disciplines_path %>" class="header"><i class="fa fa-telegram fa-1x fa-fw" aria-hidden="true"></i></a>
+    <a href="<%= industries_path %>" class="header"><i class="fa fa-superpowers fa-1x fa-fw" aria-hidden="true"></i></a>
+    <a href="<%= educations_path %>" class="header"><i class="fa fa-bath fa-1x fa-fw" aria-hidden="true"></i></a>
+    <a href="<%= interests_path %>" class="header"><i class="fa fa-bell fa-1x fa-fw" aria-hidden="true"></i></a>
+    <a href="<%= articles_path %>" class="header"><i class="fa fa-camera-retro fa-1x fa-fw" aria-hidden="true"></i></a>
+  <% end %>
     </li>
   </ul>
 </div>
