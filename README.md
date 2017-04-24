@@ -13,12 +13,12 @@ Things you may want to cover:
 
 * Database creation
   <p>
-    
+
 * Database initialization
   <p>
   Go to the Portfolio directory and run the database creation command. Then you are welcome to place data in there
   by running the seed command.
-    cd to the 
+    cd to the
    </p>
 * How to run the test suite
 
